@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Client;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -21,8 +22,18 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('home');
+        
+        $clients = Client::paginate(15);
+        if ($request->has('search')) {
+            $clients = Client::where('nome', 'like', '%' . $request->input('search') . '%')
+            ->orWhere('sexo', 'like', '%' . $request->input('search') . '%')
+            ->orWhere('email', 'like', '%' . $request->input('search') . '%')
+            ->orWhere('created_at', 'like', '%' . $request->input('search') . '%')
+            ->paginate(15);
+        }
+        $data = array('clients'=>$clients);
+        return view('home', $data);
     }
 }

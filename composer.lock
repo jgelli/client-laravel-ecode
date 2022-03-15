@@ -7,53 +7,6 @@
     "content-hash": "3a0d4b23ba15d79d74e5e5186eb1261e",
     "packages": [
         {
-            "name": "blitsoftwares/laravel-states-and-cities",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/blitsoftwares/laravel-states-and-cities.git",
-                "reference": "a158cbdf842893fc5048aadf5254a697c4f0a409"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/blitsoftwares/laravel-states-and-cities/zipball/a158cbdf842893fc5048aadf5254a697c4f0a409",
-                "reference": "a158cbdf842893fc5048aadf5254a697c4f0a409",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Blit\\StatesAndCities\\Providers\\StatesAndCitiesServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Blit\\StatesAndCities\\": "./src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Lucas R.Pasquetto",
-                    "email": "lucas@blitsoft.com.br",
-                    "homepage": "http://www.blitsoft.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "País, cidades e estados. Com código IBGE Brasil. Com migrations, models, seeder, routes, config e views. SQL de dumps disponiveis na pasta 'sql'.",
-            "support": {
-                "issues": "https://github.com/blitsoftwares/laravel-states-and-cities/issues",
-                "source": "https://github.com/blitsoftwares/laravel-states-and-cities/tree/master"
-            },
-            "time": "2018-02-25T21:59:51+00:00"
-        },
-        {
             "name": "brick/math",
             "version": "0.9.3",
             "source": {
@@ -7840,9 +7793,6 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "blitsoftwares/laravel-states-and-cities": 20
-    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
