@@ -15,7 +15,6 @@ To run this project you need to install locally on your machine the following de
 
 - Docker;
 - Docker Composer;
-- NPM;
 
 ## Running
 
