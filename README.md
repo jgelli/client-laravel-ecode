@@ -22,7 +22,7 @@ To run this project you need to install locally on your machine the following de
 2. Now run `make bash` to get in the docker terminal
 3. Inside docker terminal run `composer install`
 4. Still in docker terminal run the Laravel migrations with `php artisan migrate`
-5. Acess [localhost:8005](#localhost:8005)
+5. Acess [localhost:8005](http://localhost:8005)
 6. Have fun!
 
 ## Routes
